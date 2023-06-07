@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Sandy/static/css/main.47329098.css",
-    "main.js": "/Sandy/static/js/main.b985cbcc.js",
+    "main.js": "/Sandy/static/js/main.397edbc5.js",
     "index.html": "/Sandy/index.html",
     "main.47329098.css.map": "/Sandy/static/css/main.47329098.css.map",
-    "main.b985cbcc.js.map": "/Sandy/static/js/main.b985cbcc.js.map"
+    "main.397edbc5.js.map": "/Sandy/static/js/main.397edbc5.js.map"
   },
   "entrypoints": [
     "static/css/main.47329098.css",
-    "static/js/main.b985cbcc.js"
+    "static/js/main.397edbc5.js"
   ]
 }
