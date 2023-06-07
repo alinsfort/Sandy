@@ -1,38 +1,117 @@
-.App {
-  text-align: center;
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+* {
+  font-family: 'Poppins',sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+body {
+  position: relative;
   min-height: 100vh;
+  background-image: linear-gradient(to right, #141e30, #243b55);
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  overflow-x: hidden;
 }
 
-.App-link {
-  color: #61dafb;
+body::-webkit-scrollbar {
+  width: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px gray;
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(to right, #141e30, #243b55);
+  border-radius: 50px;
+}
+
+body .header-title h1 {
+  text-align: center;
+  font-size: 7rem;
+  color: #fff;
+  margin-top: 2rem;
+}
+
+body .header-title p {
+  text-align: center;
+  color: #fff;
+}
+
+.App {
+  padding: 5rem;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.App .movie-card {
+  min-height: 500px;
+  color: #fff;
+  transition: all 0.5s ease;
+  box-shadow: 1px 0px 5px rgba(255, 255, 255, 0.2);
+  background: #1d1d1d;
+}
+
+.App .movie-card:hover {
+  box-shadow: none;
+}
+
+.App .movie-card .movie-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.App .movie-card .movie-details {
+  padding: 1rem;
+}
+
+.App .movie-card .movie-details .movie-title {
+  height: 70px;
+}
+
+.App .movie-card .movie-details .movie-genre {
+  font-size: 15px;
+  color: #eeeeee;
+}
+
+.App .movie-card .movie-details .download-button {
+  width: 100%;
+  display: inline-block;
+  outline: 0;
+  cursor: pointer;
+  border: none;
+  padding: 0 56px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 7px;
+  font-weight: 400;
+  font-size: 16px;
+  background: #fff;
+  color: #696969;
+  transition: background 0.2s ease,color 0.2s ease,box-shadow 0.2s ease;
+}
+
+.App .movie-card .movie-details .download-button:hover {
+  background: rgba(255, 255, 255, 0.9);
+  color: #0026bd;
+}
+
+.App .movie-card .movie-details .summary-title {
+  display: none;
+}
+
+.App .movie-card .movie-details .description {
+  margin: 1rem 0rem;
+  height: 150px;
+  font-size: 17px;
+  color: #ffb300;
 }
