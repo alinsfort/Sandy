@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Sandy/static/css/main.47329098.css",
+    "main.js": "/Sandy/static/js/main.cfea5662.js",
+    "index.html": "/Sandy/index.html",
+    "main.47329098.css.map": "/Sandy/static/css/main.47329098.css.map",
+    "main.cfea5662.js.map": "/Sandy/static/js/main.cfea5662.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.47329098.css",
+    "static/js/main.cfea5662.js"
+  ]
+}
