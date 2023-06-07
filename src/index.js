@@ -15,11 +15,9 @@ const client = new ApolloClient({
 })
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <HashRouter>
+root.render( 
     <ApolloProvider client={client}>
       <Header/>
       <App />
-    </ApolloProvider>
-  </HashRouter>
+    </ApolloProvider> 
 );  
