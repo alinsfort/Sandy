@@ -10,7 +10,6 @@ function App() {
     <div className="App"> 
       <Routes>
           <Route path='*' element={<Movies/>}/>
-           
       </Routes> 
     </div>
   );
